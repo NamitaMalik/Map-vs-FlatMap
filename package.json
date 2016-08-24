@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Demo for Map and FlatMap",
   "main": "index.html",
-  "dependencies": {
-    "rxjs": "^5.0.0-beta.11"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
