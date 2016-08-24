@@ -1,9 +1,6 @@
 /**
- * Created by namita on 8/24/16.
+ * Created by namitamalik on 8/24/16.
  */
-
-//var Rx = require('rxjs/Rx');
-
 var a = [
     "Namita",
     "Amit",
@@ -12,11 +9,10 @@ var a = [
 ];
 
 var source1 = Rx.Observable.from(a)
-    .map(x=>Rx.Observable.of('Hello '+x))
+    .map(x => Rx.Observable.of('Hello ' + x))
     .mergeAll();
-source1.subscribe(x=>document.getElementById('text').innerText = x);
+source1.subscribe(x => document.getElementById('text').innerText = x);
 
 var source2 = Rx.Observable.from(a)
-    .flatMap(x=>Rx.Observable.of('Hello '+x));
-source2.subscribe(x=>console.log(x));
-
+    .flatMap(x => Rx.Observable.of('Hello ' + x));
+source2.subscribe(x => console.log(x));
