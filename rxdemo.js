@@ -11,8 +11,8 @@ var a = [
 var source1 = Rx.Observable.from(a)
     .map(x => Rx.Observable.of('Hello ' + x))
     .mergeAll();
-source1.subscribe(x => document.getElementById('text').innerText = x);
+source1.subscribe(x => document.getElementById('mergeAll').innerText += x+"\n");
 
 var source2 = Rx.Observable.from(a)
     .flatMap(x => Rx.Observable.of('Hello ' + x));
-source2.subscribe(x => console.log(x));
+source2.subscribe(x => document.getElementById('flatMap').innerText += x+"\n");
