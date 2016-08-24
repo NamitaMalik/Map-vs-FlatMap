@@ -1,0 +1,32 @@
+{
+  "name": "map-vs-flatmap",
+  "version": "1.0.0",
+  "description": "Demo for Map and FlatMap",
+  "main": "index.html",
+  "dependencies": {
+    "rxjs": "^5.0.0-beta.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamitaMalik/Map-vs-FlatMap.git"
+  },
+  "keywords": [
+    "rxjs",
+    "flatmap",
+    "map",
+    "mergeAll",
+    "ECMA6",
+    "ES2015",
+    "JavaScript"
+  ],
+  "author": "NamitaMalik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamitaMalik/Map-vs-FlatMap/issues"
+  },
+  "homepage": "https://github.com/NamitaMalik/Map-vs-FlatMap#readme"
+}
