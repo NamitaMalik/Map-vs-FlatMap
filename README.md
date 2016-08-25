@@ -41,6 +41,7 @@ source.subscribe(x => document.getElementById('map').innerText += x+"\n");
 
 And view would look like this:
 
+![map-flatMap.png](https://raw.githubusercontent.com/Map-vs-FlatMap/assets/map-flatMap.png)
 
 
 But what we wanted to see was how to work with *observable of observable sequence*, so for that let's make some changes as given below:
@@ -52,6 +53,8 @@ var source = Rx.Observable.from(visitors)
 
 ...and our view would look something like this:
 
+![map-flatMap.png](https://raw.githubusercontent.com/Map-vs-FlatMap/assets/Map-error.png)
+
 
 So how to fix this up? Well, now we'll have to use our **flatMap** operator as given below:
 
@@ -62,7 +65,7 @@ var source = Rx.Observable.from(visitors)
 
 and now one can simply subscribe to it as we were doing earlier and our view as per our expectations:
 
-
+![map-flatMap.png](https://raw.githubusercontent.com/Map-vs-FlatMap/assets/map-flatMap.png)
 
 So what's the exact difference between **map** and **flatMap**:
 
