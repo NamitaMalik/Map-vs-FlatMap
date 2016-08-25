@@ -94,6 +94,15 @@ So let's make a small ASCII marbel to make our understanding more clear:
 There is also another operator named as **.mergeAll** which we can use with **map** when we are in observable of observables situation instead of directly using **flatMap**. **RxJS** has numerous operators and hopefully this learning
 voyage will take us to each one of them..till then happy learning!
 
+Follow Me
+---
+[Github](https://github.com/NamitaMalik)
+
+[Twitter](https://twitter.com/namita13_04)
+
+[LinkedIn](https://in.linkedin.com/in/namita-malik-a7885b23)
+
+[More Blogs By Me](https://namitamalik.github.io/)
 
 
 
