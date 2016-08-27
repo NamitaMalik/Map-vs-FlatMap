@@ -1,7 +1,7 @@
 /**
  * Created by namitamalik on 8/24/16.
  */
-var visitors = [
+let visitors = [
     "Namita",
     "Amit",
     "Rohit",
@@ -10,4 +10,4 @@ var visitors = [
 
 var source = Rx.Observable.from(visitors)
     .flatMap(x => Rx.Observable.of('Hello ' + x));
-source.subscribe(x => document.getElementById('flatMap').innerText += x+"\n");
+source.subscribe(x => document.getElementById('flatMap').innerText += x + "\n");
