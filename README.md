@@ -12,7 +12,7 @@ The above ones are like most commonly used and you would get to know many new on
 
 Well, I encountered a situation where I had **Observable** of **Observables** and I wanted a single stream out of them and to solve this I got introduced to another interesting operator:
 
-**flatMap** - It basically *merges an observable sequence of observable sequences into an observable sequence.*
+**flatMap** - It basically *merges an observable sequence of observable sequences into a single observable sequence.*
 
 So, let's take a sample snippet to see how the it works. We have an array of visitors as given below:
 
