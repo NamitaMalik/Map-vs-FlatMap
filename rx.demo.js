@@ -8,6 +8,6 @@ let visitors = [
     "Neetika"
 ];
 
-var source = Rx.Observable.from(visitors)
+let source = Rx.Observable.from(visitors)
     .flatMap(x => Rx.Observable.of('Hello ' + x));
 source.subscribe(x => document.getElementById('flatMap').innerText += x + "\n");

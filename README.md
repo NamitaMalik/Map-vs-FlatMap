@@ -16,8 +16,8 @@ Well, I encountered a situation where I had **Observable** of **Observables** an
 
 So, let's take a sample snippet to see how the it works. We have an array of visitors as given below:
 
-```
-var visitors = [
+```JavaScript
+let visitors = [
     "Namita",
     "Amit",
     "Rohit",
@@ -27,14 +27,14 @@ var visitors = [
 
 Now, we want this array to be converted into an **Observable** sequence, so it can be done something like:
 
-``` 
-var source = Rx.Observable.from(visitors)
+```JavaScript
+let source = Rx.Observable.from(visitors)
     .map(x => 'Hello ' + x);
 ```
 
 We will now have to subscribe to this sequence:
 
-```
+```JavaScript
 source.subscribe(x => document.getElementById('flatMap').innerText += x + "\n");
 ```
 
@@ -45,8 +45,8 @@ And view would look like this:
 
 But what we wanted to see was how to work with **observable of observable sequence**, so for that let's make some changes as given below:
 
-```
-var source = Rx.Observable.from(visitors)
+```JavaScript
+let source = Rx.Observable.from(visitors)
     .map(x => Rx.Observable.of('Hello ' + x));
 ```
 
@@ -56,8 +56,8 @@ var source = Rx.Observable.from(visitors)
 
 So how to fix this up? Well, now we'll have to use our **flatMap** operator as given below:
 
-```
-var source = Rx.Observable.from(visitors)
+```JavaScript
+let source = Rx.Observable.from(visitors)
     .flatMap(x => Rx.Observable.of('Hello ' + x));
 ```
 
