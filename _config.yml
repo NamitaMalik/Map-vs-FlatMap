@@ -1,0 +1,8 @@
+title: Map vs FlatMap
+description: This blog discusses difference between Map and FlatMap in RxJS.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-hacker
+
+gems:
+  - jekyll-mentions
